@@ -1,4 +1,4 @@
-const { conectarBanco } = require("./bandodedados");
+const { conectarBanco } = require("./bancodedados");
 
 const consultarDados = async () => {
     try {

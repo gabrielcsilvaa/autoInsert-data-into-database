@@ -1,6 +1,6 @@
 const { Client } = require('pg');
 const { Read } = require('./read.js');
-const { add } = require('./create.js');
+const { add } = require('./createBD.js');
 const {consultaCnpj} = require('./apiCnpj.js')
 const {listarEmpresas} = require('./listarempresas.js')
 const client = new Client({

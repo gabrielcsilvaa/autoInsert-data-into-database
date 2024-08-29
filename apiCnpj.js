@@ -1,4 +1,3 @@
-
   const consultaCnpj = async (cnpj) => {
     const url = `https://api.cnpja.com/office/${cnpj}?simples=true`;
   

@@ -1,5 +1,3 @@
-
-
 const listarSocios = async () => {
     const metodo =  "socios_aniversariantes";
     const url = `https://app.e-kontroll.com.br/api/v1/metodo/${metodo}`;

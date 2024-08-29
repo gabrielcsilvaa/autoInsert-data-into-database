@@ -1,5 +1,3 @@
-
-
 const listarEmpresas = async () => {
     const metodo =  "listar_empresas";
     const url = `https://app.e-kontroll.com.br/api/v1/metodo/${metodo}`;

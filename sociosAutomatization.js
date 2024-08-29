@@ -1,8 +1,8 @@
 const { Client } = require('pg');
 const { Read } = require('./read.js');
-const { addSocio } = require('./create.js');
+const { addSocio } = require('./createBD.js');
 const { listarEmpresas } = require('./listarempresas.js');
-const { listarSocios } = require('./listarSocios');
+const { listarSocios } = require('./listarSocios.js');
 
 const client = new Client({
   user: 'postgres',

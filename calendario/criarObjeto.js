@@ -1,14 +1,11 @@
 const { consultarDados } = require("./logicacalendario.js");
-const { conectarBanco } = require("./bandodedados");
+const { conectarBanco } = require("./bancodedados.js");
 const { getYear, differenceInCalendarDays, parseISO, format } = require('date-fns');
-// Obter a data atual
+// obter data atual usando o date-fns
 const dataAtual = new Date();
 
 async function testando() {
     try {
-        // Conectar ao banco de dados (opcional, dependendo do fluxo do seu aplicativo)
-
-        // Chamar a função de consulta
         const resultados = await consultarDados();
         
         const listaEventos = resultados.map(item => {
@@ -62,7 +59,7 @@ async function testando() {
     } catch (error) {
         console.error('Erro ao executar teste:', error);
     } finally {
-        // Encerrar a conexão com o banco de dados após as operações (opcional, dependendo do fluxo do seu aplicativo)
+       
         await conectarBanco.end();
     }
 }
